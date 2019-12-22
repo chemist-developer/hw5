@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Функции</title>
+</head>
+<body>
+    <script>
+       function getResult(a, b, c){
+           switch (c) {
+            case '+':
+               return a + b;
+               break;
+            case '-':
+               return a - b;
+               break;
+            case '/':
+               return a / b;
+               break;
+            case '*':
+               return a * b;
+               break;
+            default :
+               alert('Invalid operation');
+
+
+           }
+       }
+       alert(getResult(prompt('enter first number'), prompt('enter second number'), prompt('enter operation')));
+         
+      
+    </script>
+</body>
+</html>
