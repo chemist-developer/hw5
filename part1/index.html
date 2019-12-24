@@ -9,25 +9,27 @@
 <body>
     <script>
        function getResult(a, b, c){
-           switch (c) {
+          
+            switch (c) {
             case '+':
-               return a + b;
+               return parseInt(a) + parseInt(b);
                break;
             case '-':
-               return a - b;
+               return parseInt(a) - parseInt(b);
                break;
             case '/':
-               return a / b;
+               return parseInt(a) / parseInt(b);
                break;
             case '*':
-               return a * b;
+               return parseInt(a) * parseInt(b);
                break;
             default :
                alert('Invalid operation');
 
-
            }
-       }
+          }
+       
+       
        alert(getResult(prompt('enter first number'), prompt('enter second number'), prompt('enter operation')));
          
       
